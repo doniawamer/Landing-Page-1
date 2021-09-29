@@ -1,0 +1,212 @@
+/* GENERAL */ 
+
+body { 
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: #fff;
+}
+
+/* TEXT */ 
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: rgba(158, 8, 8, 0.644);
+    border-top: 5px solid cadetblue;
+    border-bottom: 5px solid cadetblue;
+}
+
+h2 {
+    border-top: 2px dotted rgb(191, 213, 214);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    line-height: 2.6em;
+    color: rgba(24, 23, 23, 0.678);
+    font-size: 20px;
+}
+
+
+/*NAVIGATION*/
+.navigation {
+    height: 80px;
+    background-color:cadetblue;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation .nav_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navigation .nav_list .nav_item {
+    padding-right: 25px;
+    list-style-type:none;
+    font-size: 20px;
+}
+
+.navigation .nav_list .nav_link {
+    text-decoration:none;
+    color: #fff;
+}
+
+.navigation .nav_list .nav_link.active {
+    text-decoration: solid bisque;
+    border-radius: 0 5px 5px 0; 
+}
+
+.nav_link:hover {background-color: #216fb8}
+
+.nav_link:active {
+  background-color: #216fb8;
+  box-shadow: 0 3px rgb(218, 217, 217);
+  transform: translateY(4px);
+}
+
+/* HEADER IMAGE */ 
+.header-image {
+    display: none;
+}
+
+/*ABOUT ME */
+
+.about-image {
+    display: none;
+}
+.about-me h2  {
+    font-size: 2rem;
+    color: #1a1818b7;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.about-me {
+    background-color: rgba(175,205,194,255);
+}
+
+
+.about-wrapper {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-wrapper .text {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*CONTACT*/
+.contact-me h2 {
+    font-size: 2rem;
+    color: #1a1818b7;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.contact-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
+
+}
+
+input[type="email"], input[type="text"] {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+}
+
+.name { 
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+}
+
+.bottom  {
+    text-align: center;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button button {
+    width: 100px;
+    height: 35px;
+    background-color: #9c9c9c;
+    color: black;
+    font-weight: 700;
+    border: 1 px solid grey;
+    cursor:pointer;
+}
+
+/* Footer Styles */
+.footer {
+    background: lightgrey;
+    padding: 2em;
+    color: rgb(88, 87, 87);
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 35em){
+    h1 {
+        font-size: 3em;
+        margin: 2em 4rem 1em;
+        text-align: center;
+    }
+
+    .header-image {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        margin-right: auto;
+    }
+    .about-image {
+        display: flex;
+        justify-content: right;
+        float:right;
+        height: 400px;
+    
+    }
+    .contact-wrapper {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center space-around;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    
+
+}
+
+
+ 

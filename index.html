@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title> My Travel Blog </title> 
+</head>
+<!-- NAVIGATION -->
+<body> 
+    <nav class = "navigation">
+        
+       <ul class = 'nav_list'> </ul>
+    </nav> 
+    <main> 
+        <section data-nav = "Home" class="header" id="header">
+            
+            <div class = "container"> 
+            <header class= "intro-text"> 
+                <h1> WELCOME TO MY TRAVEL BLOG </h1>
+            </div>
+            </header>
+            <div class = "header-image">
+                <img src="./images/Travel Blog.png" />
+            </div> 
+        </section>
+
+<!-- ABOUT ME -->
+
+        <section data-nav= "About Me" class= "about-me" id="about-me"> 
+            <h2> About Me </h2>
+            <div class = 'about-image'>
+                <img src="./images/Travel Blog.gif"/>
+            </div>
+            <div class="about-wrapper">
+                <div class="text">
+                    <p>
+                        My name is Serene Issa and I have traveled from 
+                        far and wide and want to 
+                        share my experiences with you all! 
+                        Come to this page for tips on how to travel alone
+                        or with a group of people. 
+                    </p>
+                    <br /> 
+                    <p> 
+                        I recently graduated in March 2021, from the University of California, San Diego.
+                        I've taken up a side passion of traveling, and photography, which is made possible
+                        with my remote job!
+                        Learn how to travel for fun while making it affordable! 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+<!-- CONTACT FORM -->
+
+        <section data-nav= "Contact Me" class = "contact-me" id="contact-me">
+            <h2> Get in touch! </h2>
+            <div class = "contact-wrapper">
+                <form method= "POST">
+                    <p class="name">
+                    <label for = "name" class="name-label"> Name:</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="First Name"
+                        required
+                    
+                />
+                </p>
+                        <p class = "email">
+                <label for="email" class="email-label"> Email:</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                    />
+                    </p>
+                <p class="bottom">
+                    <label for= "message"> Inquiry:</label>
+                    <br/>
+                    <textarea
+                        id="message"
+                        name="messafe"
+                        rows="4"
+                        cols="40"
+                        placeholder= "Type Your Message Here"
+                        required
+                    ></textarea>
+                </p>
+                <p class= "submit-button">
+                    <button type = "submit"> Send</button>
+                </p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span class="text">
+            &copy; 2021. Issa Travel Blog. All rights Reserved.
+        </span>
+    </footer>
+    <script src=js/app.js> </script>
+
+</body>
+</html>
+
+
