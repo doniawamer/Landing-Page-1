@@ -24,4 +24,41 @@ const dynamicMenu = () => {
     return;
 }
 
+const removeActiveClasses = (links) => {
+    links.forEach((navLink) => {
+        navLink.classList.remove('active');
+    });
+}
+
 dynamicMenu();
+
+/* Scroll   */
+const scrollEffect = () => {
+    const navLinks = document.querySelectorAll('.nav_link');
+        for(const navLink of navLinks) {
+            navLink.addEventListener('click',  function() {
+                removeActiveClasses(navLinks);
+                const links = navLink.getAttribute('href');
+                document
+                    .querySelector(links)
+                    .scrollIntoView({ behavior: 'smooth' });
+                navLink.classList.add('active');
+            });
+        }
+    return;
+}
+
+scrollEffect();
+
+const checkViewport = () => {
+const startCheck = () => {    
+    const rect = document.getElementById(section).getBoundingClientRect();
+   
+    startCheck();
+    window.addEventListener('scroll', startCheck);
+    return;
+    
+    checkViewport();
+
+} 
+} 
