@@ -36,7 +36,8 @@ dynamicMenu();
 const scrollEffect = () => {
     const navLinks = document.querySelectorAll('.nav_link');
         for(const navLink of navLinks) {
-            navLink.addEventListener('click',  function() {
+            navLink.addEventListener('click',  function(e) {
+                e.preventDefault();
                 removeActiveClasses(navLinks);
                 const links = navLink.getAttribute('href');
                 document
@@ -51,14 +52,24 @@ const scrollEffect = () => {
 scrollEffect();
 
 const checkViewport = () => {
-const startCheck = () => {    
+const startCheck = () => {  
+    for(section of allSections) {
+    const sec = section.getAttribute('data-nav').split('#')[1];
     const rect = document.getElementById(section).getBoundingClientRect();
-   
+
+    const isActive = rect.top <=window.innerHeight && rect.top>=0;
+
+    if(isActive) {
+        removeActiveClasses(sec);
+        sec.classList.add('active');
+        break;
+    }
+
+}
     startCheck();
     window.addEventListener('scroll', startCheck);
     return;
     
-    checkViewport();
-
-} 
-} 
+    } 
+};
+checkViewport();
