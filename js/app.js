@@ -2,6 +2,7 @@
 
 const aboutSection = document.querySelector('#about-me');
 const contactSection = document.querySelector('#contact-me');
+const hobbiesSection = document.querySelector('#my-hobbies')
 const allSections = Array.from(document.querySelectorAll('section'));
 
 
@@ -44,6 +45,7 @@ const scrollEffect = () => {
                     .querySelector(links)
                     .scrollIntoView({ behavior: 'smooth' });
                 navLink.classList.add('active');
+                section.classList.add('active');
             });
         }
     return;
