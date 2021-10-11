@@ -1,4 +1,4 @@
-/* Get all sections */ 
+/* Get all sections */
 
 const aboutSection = document.querySelector('#about-me');
 const contactSection = document.querySelector('#contact-me');
