@@ -45,7 +45,6 @@ const scrollEffect = () => {
                     .querySelector(links)
                     .scrollIntoView({ behavior: 'smooth' });
                 navLink.classList.add('active');
-                section.classList.add('active');
             });
         }
     return;
