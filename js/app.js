@@ -67,11 +67,11 @@ const startCheck = () => {
         removeActiveClasses(sec);
         sec.classList.add('active');
 /*This stops it from adding the active class to the rest of the section */
+
         break;
     }
 
 }
-
 
 /* Run function first before scroll listener is triggered */
 
