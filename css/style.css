@@ -65,11 +65,12 @@ p {
     color: #fff;
 }
 
-.navigation .nav_list .nav_link.active {
+.navigation .nav_list .nav_link_active {
     background-color: black;
     text-decoration: solid bisque;
     border-radius: 0 5px 5px 0; 
 }
+
 
 .nav_link:hover {background-color: #216fb8}
 
