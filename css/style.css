@@ -8,6 +8,12 @@ body {
     color: #fff;
 }
 
+section {
+    overflow: hidden;
+    padding: 60px 0;
+    margin: 0;
+}
+
 /* TEXT */ 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -33,7 +39,7 @@ p {
 .navigation {
     height: 80px;
     background-color:cadetblue;
-    position: relative;
+    position: fixed;
     width: 100%;
     color: #fff;
     display: flex;
@@ -60,6 +66,7 @@ p {
 }
 
 .navigation .nav_list .nav_link.active {
+    background-color: black;
     text-decoration: solid bisque;
     border-radius: 0 5px 5px 0; 
 }
@@ -71,6 +78,8 @@ p {
   box-shadow: 0 3px rgb(218, 217, 217);
   transform: translateY(4px);
 }
+
+
 
 /* HEADER IMAGE */ 
 .header-image {
