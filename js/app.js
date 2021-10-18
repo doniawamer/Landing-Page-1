@@ -1,11 +1,10 @@
 /* Get all sections */
-
 const aboutSection = document.querySelector('#about-me');
 const contactSection = document.querySelector('#contact-me');
 const hobbiesSection = document.querySelector('#my-hobbies')
 const allSections = Array.from(document.querySelectorAll('section'));
 
-
+/* Other selectors */
 const unorderedList = document.querySelector('.nav_list');
 const allLinks = document.querySelectorAll('.nav_link');
 let activeLink = document.querySelector('.active');
@@ -25,6 +24,8 @@ const dynamicMenu = () => {
     return;
 }
 
+/* Clear active class from all links */
+
 const removeActiveClasses = (links) => {
     links.forEach((navLink) => {
         navLink.classList.remove('active');
@@ -33,7 +34,7 @@ const removeActiveClasses = (links) => {
 
 dynamicMenu();
 
-/* Scroll   */
+/* Scroll  */
 const scrollEffect = () => {
     const navLinks = document.querySelectorAll('.nav_link');
         for(const navLink of navLinks) {
@@ -52,6 +53,8 @@ const scrollEffect = () => {
 
 scrollEffect();
 
+/* Active state */ 
+
 const checkViewport = () => {
 const startCheck = () => {  
     for(section of allSections) {
@@ -63,10 +66,14 @@ const startCheck = () => {
     if(isActive) {
         removeActiveClasses(sec);
         sec.classList.add('active');
+/* This stops it from adding the active class to the rest of the section */
         break;
     }
 
 }
+
+/* Run function first before scroll listener is triggered */
+
     startCheck();
     window.addEventListener('scroll', startCheck);
     return;
